@@ -3,6 +3,7 @@ using UnityEngine;
 public class OrbitalZone : MonoBehaviour
 {
     [SerializeField] private float orbitSpeed = 90f;
+    [SerializeField] private string planetTag = "";
 
     private void Update()
     {
@@ -22,11 +23,14 @@ public class OrbitalZone : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        GameObject obj = collision.gameObject;
+        Transform obj = collision.gameObject.transform.parent;
 
-        if (!obj.transform.parent.transform.IsChildOf(transform))
+        if (obj == null || !obj.CompareTag(planetTag))
+            return;
+
+        if (!obj.transform.IsChildOf(transform))
         {
-            obj.transform.parent.transform.parent = transform;
+            obj.transform.parent = transform;
         }
     }
 }
