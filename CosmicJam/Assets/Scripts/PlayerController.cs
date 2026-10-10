@@ -1,5 +1,4 @@
 using UnityEngine;
-using System.Collections;
 
 public class PlayerController : MonoBehaviour
 {
@@ -7,8 +6,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float moveSpeed = 5f;
 
     [Header("Death")]
-    [SerializeField] private CanvasGroup blackScreen;
     [SerializeField] private float fadeDuration = 2f;
+    [SerializeField] private ScreenFader screenFader;
 
     private Rigidbody2D rb;
     private Vector2 movement;
@@ -43,31 +42,9 @@ public class PlayerController : MonoBehaviour
 
         enabled = false;
 
-        movement = Vector2.zero;
-        rb.linearVelocity = Vector2.zero;
-        rb.angularVelocity = 0f;
-        rb.simulated = false;
+        DisableMovement();
 
-        StartCoroutine(FadeToBlack());
-    }
-
-    private IEnumerator FadeToBlack()
-    {
-        blackScreen.gameObject.SetActive(true);
-        blackScreen.blocksRaycasts = true;
-
-        float elapsed = 0f;
-        blackScreen.alpha = 0f;
-
-        while (elapsed < fadeDuration)
-        {
-            elapsed += Time.deltaTime;
-            blackScreen.alpha = Mathf.Clamp01(elapsed / fadeDuration);
-
-            yield return null;
-        }
-
-        blackScreen.alpha = 1f;
+        screenFader.FadeToBlack(fadeDuration);
     }
 
     public void MakeVisible(bool visible)
@@ -93,5 +70,13 @@ public class PlayerController : MonoBehaviour
                                  sprite.color.g,
                                  sprite.color.b,
                                  visible ? 1.0f : 0.0f);
+    }
+
+    public void DisableMovement()
+    {
+        movement = Vector2.zero;
+        rb.linearVelocity = Vector2.zero;
+        rb.angularVelocity = 0f;
+        rb.simulated = false;
     }
 }
