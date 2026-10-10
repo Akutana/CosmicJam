@@ -14,9 +14,9 @@ public class BlackHole : MonoBehaviour
             collision.GetComponent<PlayerController>().Die();
         }
         
-        else if (collision.transform.parent.CompareTag("Planet"))
+        else if (collision.transform.parent != null
+            && collision.transform.parent.CompareTag("Planet"))
         {
-            Debug.Log("planet");
             Destroy(collision.transform.parent.gameObject);
         }
     }
