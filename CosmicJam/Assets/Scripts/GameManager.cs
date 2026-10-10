@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
@@ -55,5 +56,10 @@ public class GameManager : MonoBehaviour
     public void StopTimer()
     {
         isRunning = false;
+    }
+
+    public void RestartGame()
+    {
+        SceneManager.LoadScene("MainMap");
     }
 }
