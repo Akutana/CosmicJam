@@ -1,19 +1,61 @@
 fileFormatVersion: 2
-guid: cd71c65d748b1dc4eaa6331bbf3cceb1
+guid: 1321d5cf49d6e23478e7872bafc756d7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4840796617318243586
-    second: aura_farming_guy_0
+      213: -3872833643036876139
+    second: alien spritesheet_0
   - first:
-      213: 3093401695073659546
-    second: aura_farming_guy_1
+      213: -5391645017270653198
+    second: alien spritesheet_1
   - first:
-      213: -3808442946342502225
-    second: aura_farming_guy_2
+      213: -9019740158418905525
+    second: alien spritesheet_2
   - first:
-      213: -4119373949516004082
-    second: aura_farming_guy_3
+      213: 4180034283497785474
+    second: alien spritesheet_3
+  - first:
+      213: -2654051232019183729
+    second: alien spritesheet_4
+  - first:
+      213: 8911663555084574537
+    second: alien spritesheet_5
+  - first:
+      213: 5703229302911579611
+    second: alien spritesheet_6
+  - first:
+      213: 6346921942558187187
+    second: alien spritesheet_7
+  - first:
+      213: 6158924774460380257
+    second: alien spritesheet_8
+  - first:
+      213: 3108836228567614319
+    second: alien spritesheet_9
+  - first:
+      213: 8275216676002889732
+    second: alien spritesheet_10
+  - first:
+      213: -3616754237886613550
+    second: alien spritesheet_11
+  - first:
+      213: -410702605986013790
+    second: alien spritesheet_12
+  - first:
+      213: 6727668779885056882
+    second: alien spritesheet_13
+  - first:
+      213: -737188700371825575
+    second: alien spritesheet_14
+  - first:
+      213: -5470158943974913793
+    second: alien spritesheet_15
+  - first:
+      213: -7778237222780710626
+    second: alien spritesheet_16
+  - first:
+      213: -5415674158394408255
+    second: alien spritesheet_17
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -107,106 +149,93 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: aura_farming_guy_0
+      name: alien spritesheet_0
       rect:
         serializedVersion: 2
-        x: 503
-        y: 0
-        width: 2990
+        x: 0
+        y: 4000
+        width: 4000
         height: 4000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ef265dacf1902dcb0800000000000000
-      internalID: -4840796617318243586
+      spriteID: 592ea90225ee04ac0800000000000000
+      internalID: -3872833643036876139
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: aura_farming_guy_1
+      name: alien spritesheet_1
       rect:
         serializedVersion: 2
-        x: 3486
-        y: 972
-        width: 8
-        height: 9
+        x: 4000
+        y: 4000
+        width: 4000
+        height: 4000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a9ae47eb378fdea20800000000000000
-      internalID: 3093401695073659546
+      spriteID: 2fee3964c670d25b0800000000000000
+      internalID: -5391645017270653198
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: aura_farming_guy_2
+      name: alien spritesheet_2
       rect:
         serializedVersion: 2
-        x: 3489
-        y: 963
-        width: 8
-        height: 10
+        x: 0
+        y: 0
+        width: 4000
+        height: 4000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fa0c9eb7151b52bc0800000000000000
-      internalID: -3808442946342502225
+      spriteID: b469d135d1273d280800000000000000
+      internalID: -9019740158418905525
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: aura_farming_guy_3
+      name: alien spritesheet_3
       rect:
         serializedVersion: 2
-        x: 3470
-        y: 910
-        width: 25
-        height: 26
+        x: 4000
+        y: 0
+        width: 4000
+        height: 4000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e05c912e73b05d6c0800000000000000
-      internalID: -4119373949516004082
+      spriteID: 28807d8b807720a30800000000000000
+      internalID: 4180034283497785474
       vertices: []
       indices: 
       edges: []
@@ -215,7 +244,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: ff952e6e2d9988045a70e7459495bc00
     internalID: 0
     vertices: []
     indices: 
@@ -223,12 +252,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":2.0},"gridSpriteSize":{"x":4000.0,"y":4000.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      aura_farming_guy_0: -4840796617318243586
-      aura_farming_guy_1: 3093401695073659546
-      aura_farming_guy_2: -3808442946342502225
-      aura_farming_guy_3: -4119373949516004082
+      alien spritesheet_0: -3872833643036876139
+      alien spritesheet_1: -5391645017270653198
+      alien spritesheet_2: -9019740158418905525
+      alien spritesheet_3: 4180034283497785474
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

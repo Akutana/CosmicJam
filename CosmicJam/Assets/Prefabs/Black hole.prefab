@@ -28,8 +28,8 @@ Transform:
   m_GameObject: {fileID: 2229643945693503167}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.00000083719, z: 0}
-  m_LocalScale: {x: 55.523243, y: 55.523243, z: 55.523243}
+  m_LocalPosition: {x: -0.0061402, y: -0.00000083719, z: 0}
+  m_LocalScale: {x: 55.52324, y: 55.523243, z: 55.523243}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2401433953566046779}
@@ -159,6 +159,7 @@ GameObject:
   - component: {fileID: 382358473405616500}
   - component: {fileID: 1884511674761888683}
   - component: {fileID: 1631159493297676304}
+  - component: {fileID: 3370128994453622720}
   m_Layer: 0
   m_Name: Black hole
   m_TagString: Untagged
@@ -254,7 +255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f957af06aecfd764e818d285c89871bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BlackHole
-  deathZone: {fileID: 0}
+  deathZone: {fileID: 1631159493297676304}
 --- !u!50 &1884511674761888683
 Rigidbody2D:
   serializedVersion: 5
@@ -318,3 +319,25 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 1.1311989, y: 0}
   m_Radius: 7.4351296
+--- !u!95 &3370128994453622720
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2362539820479615654}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 544c4bda227f74047ba8b3075244b4d5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

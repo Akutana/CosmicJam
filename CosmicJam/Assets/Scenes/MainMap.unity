@@ -653,11 +653,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d294a414418f1f48a06bc34d86561f3, type: 3}
---- !u!58 &595390314 stripped
-CircleCollider2D:
-  m_CorrespondingSourceObject: {fileID: 1631159493297676304, guid: 607386bc54f65c449b9d8c175ff40b91, type: 3}
-  m_PrefabInstance: {fileID: 5895206060098661367}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &628201299
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -784,6 +779,28 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8468721937108148884, guid: ce206a021a49da042bab9891ff2baad4, type: 3}
   m_PrefabInstance: {fileID: 6506101151091051193}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &637380771
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637380765}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b5d75eaec5f4dd641962e375d9cfc8be, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &741750723
 GameObject:
   m_ObjectHideFlags: 0
@@ -1570,30 +1587,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 382358473405616500, guid: 607386bc54f65c449b9d8c175ff40b91, type: 3}
-      propertyPath: deathZone
-      value: 
-      objectReference: {fileID: 595390314}
     - target: {fileID: 2006258617502010618, guid: 607386bc54f65c449b9d8c175ff40b91, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 637380765}
     - target: {fileID: 2006258617502010618, guid: 607386bc54f65c449b9d8c175ff40b91, type: 3}
-      propertyPath: attractionForce
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 2006258617502010618, guid: 607386bc54f65c449b9d8c175ff40b91, type: 3}
       propertyPath: playerOrbitalZone
       value: 
       objectReference: {fileID: 894641777}
-    - target: {fileID: 2006258617502010618, guid: 607386bc54f65c449b9d8c175ff40b91, type: 3}
-      propertyPath: planetAttractionForce
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 2006258617502010618, guid: 607386bc54f65c449b9d8c175ff40b91, type: 3}
-      propertyPath: playerAttractionForce
-      value: 3000
-      objectReference: {fileID: 0}
     - target: {fileID: 2362539820479615654, guid: 607386bc54f65c449b9d8c175ff40b91, type: 3}
       propertyPath: m_Name
       value: Black hole
@@ -1637,18 +1638,6 @@ PrefabInstance:
     - target: {fileID: 2401433953566046779, guid: 607386bc54f65c449b9d8c175ff40b91, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8220457480322363456, guid: 607386bc54f65c449b9d8c175ff40b91, type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 9175038450460310134, guid: 607386bc54f65c449b9d8c175ff40b91, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 55.52324
-      objectReference: {fileID: 0}
-    - target: {fileID: 9175038450460310134, guid: 607386bc54f65c449b9d8c175ff40b91, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.0061402
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1718,7 +1707,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8468721937108148884, guid: ce206a021a49da042bab9891ff2baad4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 637380771}
   m_SourcePrefab: {fileID: 100100000, guid: ce206a021a49da042bab9891ff2baad4, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
