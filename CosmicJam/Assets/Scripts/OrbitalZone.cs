@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class OrbitalZone : MonoBehaviour
@@ -5,7 +6,7 @@ public class OrbitalZone : MonoBehaviour
     [SerializeField] private float orbitSpeed = 90f;
     [SerializeField] private string planetTag = "";
 
-    private void Update()
+    private void FixedUpdate()
     {
         int children = transform.childCount;
 

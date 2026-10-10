@@ -6,13 +6,18 @@ public class BlackHole : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (!deathZone.IsTouching(collision))
+            return;
 
         if (collision.CompareTag("Player"))
         {
-            if (!deathZone.IsTouching(collision))
-                return;
-
             collision.GetComponent<PlayerController>().Die();
+        }
+        
+        else if (collision.transform.parent.CompareTag("Planet"))
+        {
+            Debug.Log("planet");
+            Destroy(collision.transform.parent.gameObject);
         }
     }
 }

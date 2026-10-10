@@ -1,38 +1,96 @@
+using System.Linq;
 using UnityEngine;
+using System.Collections.Generic;
 
 public class AttractionZone : MonoBehaviour
 {
-    [SerializeField] private float attractionForce = 10f;
-    [SerializeField] private Rigidbody2D player;
+    [SerializeField] private float playerAttractionForce = 10f;
+    [SerializeField] private float planetAttractionForce = 10f;
+    [SerializeField] private GameObject player;
+    [SerializeField] private GameObject playerOrbitalZone;
 
-    private bool isApplyingForce = false;
+    private List<GameObject> objectsToAttract = new List<GameObject>();
+    private List<GameObject> destroyedObjects = new List<GameObject>();
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.transform.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
-            isApplyingForce = true;
+            objectsToAttract.Add(collision.gameObject);
+        }
+
+        else if (collision.transform.parent.CompareTag("Planet"))
+        {
+            Transform planet = collision.transform.parent;
+
+            if (planet.transform.parent == playerOrbitalZone.transform)
+            {
+                planet.transform.parent = null;
+
+                objectsToAttract.Add(planet.gameObject);
+            }
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.transform.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
-            isApplyingForce = false;
+            //isApplyingForce = false;
+            objectsToAttract.Remove(collision.gameObject);
         }
     }
 
     private void FixedUpdate()
     {
-        if (!isApplyingForce)
+        if (objectsToAttract.Count == 0)
             return;
 
-        Vector2 direction = (Vector2)transform.position - player.position;
+        foreach (GameObject obj in objectsToAttract)
+        {
+            Debug.Log("Attracting object");
+            AttractObject(obj);
+        }
 
-        float distance = direction.magnitude;
-        float force = attractionForce / Mathf.Max(distance * distance, 0.25f);
+        foreach (GameObject obj in destroyedObjects)
+        {
+            objectsToAttract.Remove(obj);
+        }
+    }
 
-        player.AddForce(direction.normalized * force);
+    private void AttractObject(GameObject obj)
+    {
+        if (obj == null)
+        {
+            destroyedObjects.Add(obj);
+            return;
+        }
+
+        if (obj.GetComponent<Rigidbody2D>().bodyType == RigidbodyType2D.Dynamic)
+        {
+            Rigidbody2D rb = obj.GetComponent<Rigidbody2D>();
+
+            Vector2 direction = (Vector2)transform.position - rb.position;
+
+            float distance = direction.magnitude;
+            float force = playerAttractionForce / Mathf.Max(distance * distance, 0.25f);
+
+            rb.AddForce(direction.normalized * force);
+        }
+
+        else
+        {
+            Transform tr = obj.transform;
+
+            Vector2 direction = (Vector2)transform.position - (Vector2)tr.position;
+            float distance = direction.magnitude;
+
+            if (distance < 0.0001f)
+                return;
+
+            float speed = planetAttractionForce / Mathf.Max(distance * distance, 0.25f);
+
+            tr.position += (Vector3)(direction.normalized * speed * Time.fixedDeltaTime);
+        }
     }
 }
