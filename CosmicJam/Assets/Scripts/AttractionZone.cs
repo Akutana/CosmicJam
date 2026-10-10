@@ -1,4 +1,3 @@
-using System.Linq;
 using UnityEngine;
 using System.Collections.Generic;
 
@@ -19,7 +18,8 @@ public class AttractionZone : MonoBehaviour
             objectsToAttract.Add(collision.gameObject);
         }
 
-        else if (collision.transform.parent.CompareTag("Planet"))
+        else if (collision.transform.parent != null 
+            && collision.transform.parent.CompareTag("Planet"))
         {
             Transform planet = collision.transform.parent;
 

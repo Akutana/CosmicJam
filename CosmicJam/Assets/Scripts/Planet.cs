@@ -2,12 +2,13 @@ using UnityEngine;
 
 public class Planet : MonoBehaviour
 {
-    [SerializeField] private Rigidbody2D rb;
-
-    public void Destroy()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        rb.linearVelocity = Vector2.zero;
-        rb.angularVelocity = 0f;
-        rb.simulated = false;
+        if (collision.CompareTag("Planet")
+            && collision.GetComponentInParent<PlayerController>() != null)
+        {
+            Destroy(collision.gameObject);
+            Destroy(gameObject);
+        }
     }
 }
