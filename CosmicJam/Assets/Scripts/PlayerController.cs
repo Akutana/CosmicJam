@@ -39,12 +39,14 @@ public class PlayerController : MonoBehaviour
 
         isDead = true;
 
+        MakeVisible(false);
+
+        enabled = false;
+
         movement = Vector2.zero;
         rb.linearVelocity = Vector2.zero;
         rb.angularVelocity = 0f;
         rb.simulated = false;
-
-        enabled = false;
 
         StartCoroutine(FadeToBlack());
     }
@@ -66,5 +68,30 @@ public class PlayerController : MonoBehaviour
         }
 
         blackScreen.alpha = 1f;
+    }
+
+    public void MakeVisible(bool visible)
+    {
+        MakeObjectVisible(visible, transform);
+
+        int children = transform.childCount;
+
+        for (int i = 0; i < children; ++i)
+        {
+            MakeObjectVisible(visible, transform.GetChild(i));
+        }
+    }
+
+    private void MakeObjectVisible(bool visible, Transform obj)
+    {
+        SpriteRenderer sprite = obj.GetComponent<SpriteRenderer>();
+
+        if (sprite == null)
+            return;
+
+        sprite.color = new Color(sprite.color.r,
+                                 sprite.color.g,
+                                 sprite.color.b,
+                                 visible ? 1.0f : 0.0f);
     }
 }
