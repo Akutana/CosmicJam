@@ -1,0 +1,886 @@
+fileFormatVersion: 2
+guid: ffaf29afe3452d64aa551f418a1cf377
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3815706187201196319
+    second: orbit circle_0
+  - first:
+      213: 3498410732961863787
+    second: orbit circle_1
+  - first:
+      213: -7101082897659767396
+    second: orbit circle_2
+  - first:
+      213: 6946171593297360369
+    second: orbit circle_3
+  - first:
+      213: 6204289600186742625
+    second: orbit circle_4
+  - first:
+      213: -8274669041233367732
+    second: orbit circle_5
+  - first:
+      213: -4287365289029459572
+    second: orbit circle_6
+  - first:
+      213: 4808201845133779759
+    second: orbit circle_7
+  - first:
+      213: -280025066233963064
+    second: orbit circle_8
+  - first:
+      213: -1999685739042865262
+    second: orbit circle_9
+  - first:
+      213: 1336322840116146339
+    second: orbit circle_10
+  - first:
+      213: -4323280430916588390
+    second: orbit circle_11
+  - first:
+      213: 4660827481132666492
+    second: orbit circle_12
+  - first:
+      213: 8288640792734953196
+    second: orbit circle_13
+  - first:
+      213: 6256114328838750587
+    second: orbit circle_14
+  - first:
+      213: -7562903910499694315
+    second: orbit circle_15
+  - first:
+      213: 6720176596825058200
+    second: orbit circle_16
+  - first:
+      213: -8918650122493902043
+    second: orbit circle_17
+  - first:
+      213: 4457119122107432277
+    second: orbit circle_18
+  - first:
+      213: 6319851536071783363
+    second: orbit circle_19
+  - first:
+      213: 1227496909629516966
+    second: orbit circle_20
+  - first:
+      213: 8238196514513974677
+    second: orbit circle_21
+  - first:
+      213: 7900637472140889174
+    second: orbit circle_22
+  - first:
+      213: -551395759597773897
+    second: orbit circle_23
+  - first:
+      213: -3289784848177414023
+    second: orbit circle_24
+  - first:
+      213: 894178249226526718
+    second: orbit circle_25
+  - first:
+      213: 1790663091154390027
+    second: orbit circle_26
+  - first:
+      213: 3372845187286706980
+    second: orbit circle_27
+  - first:
+      213: -5728385805170213955
+    second: orbit circle_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: orbit circle_0
+      rect:
+        serializedVersion: 2
+        x: 1593
+        y: 3873
+        width: 246
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f11336f8f8c14f430800000000000000
+      internalID: 3815706187201196319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orbit circle_1
+      rect:
+        serializedVersion: 2
+        x: 1846
+        y: 3905
+        width: 173
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b681b98b60adc8030800000000000000
+      internalID: 3498410732961863787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orbit circle_2
+      rect:
+        serializedVersion: 2
+        x: 2016
+        y: 3963
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c95536c4ab2e37d90800000000000000
+      internalID: -7101082897659767396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orbit circle_3
+      rect:
+        serializedVersion: 2
+        x: 2025
+        y: 3901
+        width: 195
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f5f56ff242c56060800000000000000
+      internalID: 6946171593297360369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orbit circle_4
+      rect:
+        serializedVersion: 2
+        x: 2020
+        y: 3956
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 167f7c605801a1650800000000000000
+      internalID: 6204289600186742625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orbit circle_5
+      rect:
+        serializedVersion: 2
+        x: 2212
+        y: 3949
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4dec5b19587a2d80800000000000000
+      internalID: -8274669041233367732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orbit circle_6
+      rect:
+        serializedVersion: 2
+        x: 2221
+        y: 3533
+        width: 973
+        height: 425
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c812f0d2cf73084c0800000000000000
+      internalID: -4287365289029459572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orbit circle_7
+      rect:
+        serializedVersion: 2
+        x: 2014
+        y: 3936
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f23a39b6a1a2ab240800000000000000
+      internalID: 4808201845133779759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orbit circle_8
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 3818
+        width: 206
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cd5be69fa62d1cf0800000000000000
+      internalID: -280025066233963064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orbit circle_9
+      rect:
+        serializedVersion: 2
+        x: 1581
+        y: 3922
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29f7fe54a60bf34e0800000000000000
+      internalID: -1999685739042865262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orbit circle_10
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 3916
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a03d5efa829b8210800000000000000
+      internalID: 1336322840116146339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orbit circle_11
+      rect:
+        serializedVersion: 2
+        x: 2219
+        y: 3915
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9ca1d29a5f9004c0800000000000000
+      internalID: -4323280430916588390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orbit circle_12
+      rect:
+        serializedVersion: 2
+        x: 2220
+        y: 3903
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7e8a4466e59ea040800000000000000
+      internalID: 4660827481132666492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orbit circle_13
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 3497
+        width: 614
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cee67c9c2ea270370800000000000000
+      internalID: 8288640792734953196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orbit circle_14
+      rect:
+        serializedVersion: 2
+        x: 1371
+        y: 3850
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b714aa4f5de22d650800000000000000
+      internalID: 6256114328838750587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orbit circle_15
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 3816
+        width: 27
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 519c040a6fa2b0790800000000000000
+      internalID: -7562903910499694315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orbit circle_16
+      rect:
+        serializedVersion: 2
+        x: 1371
+        y: 3840
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89ba6a1820dd24d50800000000000000
+      internalID: 6720176596825058200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orbit circle_17
+      rect:
+        serializedVersion: 2
+        x: 1372
+        y: 3810
+        width: 9
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 523c1c477f69a3480800000000000000
+      internalID: -8918650122493902043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orbit circle_18
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 3813
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55d70da0a3edadd30800000000000000
+      internalID: 4457119122107432277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orbit circle_19
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 106
+        width: 1423
+        height: 3425
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c3f3c0fc7f94b750800000000000000
+      internalID: 6319851536071783363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orbit circle_20
+      rect:
+        serializedVersion: 2
+        x: 3163
+        y: 3413
+        width: 170
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ac6b5d8fe1f80110800000000000000
+      internalID: 1227496909629516966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orbit circle_21
+      rect:
+        serializedVersion: 2
+        x: 3330
+        y: 3441
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59577750514f35270800000000000000
+      internalID: 8238196514513974677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orbit circle_22
+      rect:
+        serializedVersion: 2
+        x: 3332
+        y: 2620
+        width: 540
+        height: 812
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65c091aebe3b4ad60800000000000000
+      internalID: 7900637472140889174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orbit circle_23
+      rect:
+        serializedVersion: 2
+        x: 3335
+        y: 3425
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bb94826a7c0958f0800000000000000
+      internalID: -551395759597773897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orbit circle_24
+      rect:
+        serializedVersion: 2
+        x: 3315
+        y: 3409
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9704ce05c165852d0800000000000000
+      internalID: -3289784848177414023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orbit circle_25
+      rect:
+        serializedVersion: 2
+        x: 3320
+        y: 3402
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eff170f4162c86c00800000000000000
+      internalID: 894178249226526718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orbit circle_26
+      rect:
+        serializedVersion: 2
+        x: 3331
+        y: 3406
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0c09a41896b9d810800000000000000
+      internalID: 1790663091154390027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orbit circle_27
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 26
+        width: 2531
+        height: 2592
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42b2c96e3d0cece20800000000000000
+      internalID: 3372845187286706980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orbit circle_28
+      rect:
+        serializedVersion: 2
+        x: 3848
+        y: 2617
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbb7072e57fa080b0800000000000000
+      internalID: -5728385805170213955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      orbit circle_0: 3815706187201196319
+      orbit circle_1: 3498410732961863787
+      orbit circle_10: 1336322840116146339
+      orbit circle_11: -4323280430916588390
+      orbit circle_12: 4660827481132666492
+      orbit circle_13: 8288640792734953196
+      orbit circle_14: 6256114328838750587
+      orbit circle_15: -7562903910499694315
+      orbit circle_16: 6720176596825058200
+      orbit circle_17: -8918650122493902043
+      orbit circle_18: 4457119122107432277
+      orbit circle_19: 6319851536071783363
+      orbit circle_2: -7101082897659767396
+      orbit circle_20: 1227496909629516966
+      orbit circle_21: 8238196514513974677
+      orbit circle_22: 7900637472140889174
+      orbit circle_23: -551395759597773897
+      orbit circle_24: -3289784848177414023
+      orbit circle_25: 894178249226526718
+      orbit circle_26: 1790663091154390027
+      orbit circle_27: 3372845187286706980
+      orbit circle_28: -5728385805170213955
+      orbit circle_3: 6946171593297360369
+      orbit circle_4: 6204289600186742625
+      orbit circle_5: -8274669041233367732
+      orbit circle_6: -4287365289029459572
+      orbit circle_7: 4808201845133779759
+      orbit circle_8: -280025066233963064
+      orbit circle_9: -1999685739042865262
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

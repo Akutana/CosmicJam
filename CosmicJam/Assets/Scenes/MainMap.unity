@@ -2677,6 +2677,10 @@ PrefabInstance:
       propertyPath: screenFader
       value: 
       objectReference: {fileID: 1048263099}
+    - target: {fileID: 1488770613769346950, guid: ce206a021a49da042bab9891ff2baad4, type: 3}
+      propertyPath: orbitSpeed
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 4714003972053897877, guid: ce206a021a49da042bab9891ff2baad4, type: 3}
       propertyPath: m_SortingOrder
       value: 1

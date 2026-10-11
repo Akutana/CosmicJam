@@ -13,11 +13,15 @@ public class OrbitalZone : MonoBehaviour
         {
             Transform obj = transform.GetChild(i);
 
+            Quaternion quat = transform.rotation;
+
             obj.RotateAround(
                 transform.position,
                 Vector3.forward,
                 -orbitSpeed * Time.deltaTime
             );
+
+            obj.rotation = quat;
         }
     }
 
