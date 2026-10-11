@@ -28,10 +28,6 @@ public class AttractionZone : MonoBehaviour
             {
                 planet.transform.parent = null;
 
-                playerOrbitalZone.GetComponent<OrbitalZone>().RemovePoints(
-                    planet.GetComponent<Planet>().GetPointsValue()
-                );
-
                 objectsToAttract.Add(planet.gameObject);
             }
         }
