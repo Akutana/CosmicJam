@@ -23,4 +23,29 @@ public class WorldBorder : MonoBehaviour
 
         edge.points = points;
     }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.yellow;
+
+        Vector3 previousPoint = transform.TransformPoint(
+            new Vector3(radius, 0f, 0f)
+        );
+
+        for (int i = 1; i <= segments; i++)
+        {
+            float angle = i * 2f * Mathf.PI / segments;
+
+            Vector3 currentPoint = transform.TransformPoint(
+                new Vector3(
+                    Mathf.Cos(angle) * radius,
+                    Mathf.Sin(angle) * radius,
+                    0f
+                )
+            );
+
+            Gizmos.DrawLine(previousPoint, currentPoint);
+            previousPoint = currentPoint;
+        }
+    }
 }
