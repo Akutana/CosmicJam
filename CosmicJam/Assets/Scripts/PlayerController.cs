@@ -96,4 +96,9 @@ public class PlayerController : MonoBehaviour
         rb.angularVelocity = 0f;
         rb.simulated = false;
     }
+
+    public int GetCurrentScore()
+    {
+        return orbitalZone.GetCurrentScore();
+    }
 }

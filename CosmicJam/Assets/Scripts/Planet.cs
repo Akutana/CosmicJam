@@ -5,6 +5,10 @@ public class Planet : MonoBehaviour
 {
     [SerializeField] private GameObject explosion;
     [SerializeField] private Collider2D childCollider;
+    [SerializeField] private int points;
+    [SerializeField] private OrbitalZone orbitalZone;
+
+    public bool isExploding = false;
 
     private void Awake()
     {
@@ -17,13 +21,16 @@ public class Planet : MonoBehaviour
             && collision.GetComponentInParent<PlayerController>() != null)
         {
             StartCoroutine(ExplodePlanet(collision.gameObject, collision));
-            Debug.Log(collision.gameObject.name);
-            Debug.Log(gameObject.name);
+
+            orbitalZone.RemovePoints(points);
         }
     }
 
     IEnumerator ExplodePlanet(GameObject collisionPlanet, Collider2D collider)
     {
+        isExploding = true;
+        collisionPlanet.GetComponent<Planet>().isExploding = true;
+
         explosion.SetActive(true);
         collider.enabled = false;
         Collider2D selfCollider = GetComponent<Collider2D>();
@@ -32,7 +39,6 @@ public class Planet : MonoBehaviour
         {
             selfCollider.enabled = false;
         }
-
 
         yield return new WaitForSeconds(0.15f);
         
@@ -51,5 +57,15 @@ public class Planet : MonoBehaviour
         explosion.SetActive(false);
         Destroy(collisionPlanet);
         Destroy(gameObject);
+    }
+
+    public int GetPointsValue()
+    {
+        return points;
+    }
+
+    public bool GetIsExploding()
+    {
+        return isExploding;
     }
 }

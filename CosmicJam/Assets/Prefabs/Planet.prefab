@@ -289,6 +289,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Planet
   explosion: {fileID: 631758069383359229}
   childCollider: {fileID: 7603831146582594675}
+  points: 5
 --- !u!1 &9192756528606085070
 GameObject:
   m_ObjectHideFlags: 0

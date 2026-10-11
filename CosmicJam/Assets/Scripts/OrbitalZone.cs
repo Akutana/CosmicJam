@@ -1,9 +1,12 @@
 using UnityEngine;
+using UnityEngine.InputSystem.XR.Haptics;
 
 public class OrbitalZone : MonoBehaviour
 {
     [SerializeField] private float orbitSpeed = 90f;
     [SerializeField] private string planetTag = "";
+
+    private int currentScore = 0;
 
     private void FixedUpdate()
     {
@@ -35,6 +38,18 @@ public class OrbitalZone : MonoBehaviour
         if (!obj.transform.IsChildOf(transform))
         {
             obj.transform.parent = transform;
+
+            currentScore += obj.GetComponent<Planet>().GetPointsValue();
         }
+    }
+
+    public void RemovePoints(int amount)
+    {
+        currentScore -= amount;
+    }
+
+    public int GetCurrentScore()
+    {
+        return currentScore;
     }
 }

@@ -181,6 +181,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Uranus
       objectReference: {fileID: 0}
+    - target: {fileID: 6295780034436374857, guid: 6d294a414418f1f48a06bc34d86561f3, type: 3}
+      propertyPath: orbitalZone
+      value: 
+      objectReference: {fileID: 894641781}
     - target: {fileID: 7131239098912084544, guid: 6d294a414418f1f48a06bc34d86561f3, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.006414084
@@ -366,6 +370,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jupiter
       objectReference: {fileID: 0}
+    - target: {fileID: 6295780034436374857, guid: 6d294a414418f1f48a06bc34d86561f3, type: 3}
+      propertyPath: orbitalZone
+      value: 
+      objectReference: {fileID: 894641781}
     - target: {fileID: 8193364790348822153, guid: 6d294a414418f1f48a06bc34d86561f3, type: 3}
       propertyPath: m_Radius
       value: 7.5346317
@@ -459,6 +467,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.72
       objectReference: {fileID: 0}
+    - target: {fileID: 6295780034436374857, guid: 6d294a414418f1f48a06bc34d86561f3, type: 3}
+      propertyPath: orbitalZone
+      value: 
+      objectReference: {fileID: 894641781}
     - target: {fileID: 8193364790348822153, guid: 6d294a414418f1f48a06bc34d86561f3, type: 3}
       propertyPath: m_Radius
       value: 5.15028
@@ -556,6 +568,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.56
       objectReference: {fileID: 0}
+    - target: {fileID: 6295780034436374857, guid: 6d294a414418f1f48a06bc34d86561f3, type: 3}
+      propertyPath: orbitalZone
+      value: 
+      objectReference: {fileID: 894641781}
     - target: {fileID: 8193364790348822153, guid: 6d294a414418f1f48a06bc34d86561f3, type: 3}
       propertyPath: m_Radius
       value: 4.4351788
@@ -637,6 +653,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Saturn
       objectReference: {fileID: 0}
+    - target: {fileID: 6295780034436374857, guid: 6d294a414418f1f48a06bc34d86561f3, type: 3}
+      propertyPath: orbitalZone
+      value: 
+      objectReference: {fileID: 894641781}
     - target: {fileID: 7131239098912084544, guid: 6d294a414418f1f48a06bc34d86561f3, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.058224216
@@ -746,6 +766,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6295780034436374857, guid: 6d294a414418f1f48a06bc34d86561f3, type: 3}
+      propertyPath: orbitalZone
+      value: 
+      objectReference: {fileID: 894641781}
     - target: {fileID: 7131239098912084544, guid: 6d294a414418f1f48a06bc34d86561f3, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.041818283
@@ -864,6 +888,10 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6295780034436374857, guid: 6d294a414418f1f48a06bc34d86561f3, type: 3}
+      propertyPath: orbitalZone
+      value: 
+      objectReference: {fileID: 894641781}
     - target: {fileID: 7131239098912084544, guid: 6d294a414418f1f48a06bc34d86561f3, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.035456877
@@ -1240,6 +1268,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.52
       objectReference: {fileID: 0}
+    - target: {fileID: 6295780034436374857, guid: 6d294a414418f1f48a06bc34d86561f3, type: 3}
+      propertyPath: orbitalZone
+      value: 
+      objectReference: {fileID: 894641781}
     - target: {fileID: 8193364790348822153, guid: 6d294a414418f1f48a06bc34d86561f3, type: 3}
       propertyPath: m_Radius
       value: 3.0650663
@@ -1561,8 +1593,7 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -5766033097715662417, guid: 23cdfb761cc52cf48a3d9017808a78a8, type: 3}
-    m_RemovedComponents:
-    - {fileID: 6295780034436374857, guid: 27b94c8d901f7ee47b604066080bddb7, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2450,6 +2481,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.71
       objectReference: {fileID: 0}
+    - target: {fileID: 6295780034436374857, guid: 6d294a414418f1f48a06bc34d86561f3, type: 3}
+      propertyPath: orbitalZone
+      value: 
+      objectReference: {fileID: 894641781}
     - target: {fileID: 8193364790348822153, guid: 6d294a414418f1f48a06bc34d86561f3, type: 3}
       propertyPath: m_Radius
       value: 3.0054977
@@ -2561,11 +2596,11 @@ PrefabInstance:
       objectReference: {fileID: 894641777}
     - target: {fileID: 2006258617502010618, guid: 607386bc54f65c449b9d8c175ff40b91, type: 3}
       propertyPath: planetAttractionForce
-      value: 50
+      value: 160
       objectReference: {fileID: 0}
     - target: {fileID: 2006258617502010618, guid: 607386bc54f65c449b9d8c175ff40b91, type: 3}
       propertyPath: playerAttractionForce
-      value: 3000
+      value: 7000
       objectReference: {fileID: 0}
     - target: {fileID: 2362539820479615654, guid: 607386bc54f65c449b9d8c175ff40b91, type: 3}
       propertyPath: m_Name
