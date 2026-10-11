@@ -57,8 +57,6 @@ public class GameManager : MonoBehaviour
 
         player.DisableMovement();
 
-        //scoreText.gameObject.SetActive(false);
-        //timerText.gameObject.SetActive(false);
         gameEndText.text = currentScore.ToString();
 
         float fadeDuration = 2f;
