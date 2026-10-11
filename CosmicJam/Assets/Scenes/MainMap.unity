@@ -1232,7 +1232,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -28, y: 10.5}
+  m_AnchoredPosition: {x: -45.5, y: 10.5}
   m_SizeDelta: {x: -200, y: -175}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &776493209
@@ -2733,11 +2733,11 @@ PrefabInstance:
       objectReference: {fileID: 894641777}
     - target: {fileID: 2006258617502010618, guid: 607386bc54f65c449b9d8c175ff40b91, type: 3}
       propertyPath: planetAttractionForce
-      value: 160
+      value: 175
       objectReference: {fileID: 0}
     - target: {fileID: 2006258617502010618, guid: 607386bc54f65c449b9d8c175ff40b91, type: 3}
       propertyPath: playerAttractionForce
-      value: 7000
+      value: 20000
       objectReference: {fileID: 0}
     - target: {fileID: 2362539820479615654, guid: 607386bc54f65c449b9d8c175ff40b91, type: 3}
       propertyPath: m_Name
@@ -2862,7 +2862,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 345716258042050186, guid: ce206a021a49da042bab9891ff2baad4, type: 3}
       propertyPath: moveSpeed
-      value: 3.5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 345716258042050186, guid: ce206a021a49da042bab9891ff2baad4, type: 3}
       propertyPath: audioSource
@@ -2902,7 +2902,15 @@ PrefabInstance:
       objectReference: {fileID: 1887102640}
     - target: {fileID: 1488770613769346950, guid: ce206a021a49da042bab9891ff2baad4, type: 3}
       propertyPath: orbitSpeed
-      value: 50
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 1488770613769346950, guid: ce206a021a49da042bab9891ff2baad4, type: 3}
+      propertyPath: maxOrbitSpeed
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 1488770613769346950, guid: ce206a021a49da042bab9891ff2baad4, type: 3}
+      propertyPath: baseOrbitSpeed
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 4714003972053897877, guid: ce206a021a49da042bab9891ff2baad4, type: 3}
       propertyPath: m_SortingOrder
@@ -3311,6 +3319,14 @@ PrefabInstance:
     - target: {fileID: 4714003972053897877, guid: ce206a021a49da042bab9891ff2baad4, type: 3}
       propertyPath: m_Positions.Array.data[99].z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4752881970877849493, guid: ce206a021a49da042bab9891ff2baad4, type: 3}
+      propertyPath: near clip plane
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4752881970877849493, guid: ce206a021a49da042bab9891ff2baad4, type: 3}
+      propertyPath: orthographic size
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8468721937108148884, guid: ce206a021a49da042bab9891ff2baad4, type: 3}
       propertyPath: m_Name

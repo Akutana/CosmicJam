@@ -13,8 +13,6 @@ public class AttractionZone : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("collision");
-
         if (collision.CompareTag("Player"))
         {
             objectsToAttract.Add(collision.gameObject);
@@ -23,13 +21,11 @@ public class AttractionZone : MonoBehaviour
         else if (collision.transform.parent != null 
             && collision.transform.parent.CompareTag("Planet"))
         {
-            Debug.Log("collision planet");
             Transform planet = collision.transform.parent;
 
             if (planet.transform.parent == playerOrbitalZone.transform
                 && !planet.GetComponent<Planet>().GetIsExploding())
             {
-                Debug.Log("collision planet not exploding");
                 planet.transform.parent = null;
 
                 playerOrbitalZone.GetComponent<OrbitalZone>().RemovePoints(
@@ -51,10 +47,9 @@ public class AttractionZone : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Debug.Log("FixedUpdate");
         if (objectsToAttract.Count == 0)
             return;
-        Debug.Log("count not 0");
+
         foreach (GameObject obj in objectsToAttract)
         {
             AttractObject(obj);
@@ -70,17 +65,14 @@ public class AttractionZone : MonoBehaviour
 
     private void AttractObject(GameObject obj)
     {
-        Debug.Log("attract");
         if (obj == null)
         {
-            Debug.Log("null");
             destroyedObjects.Add(obj);
             return;
         }
 
         if (obj != player && obj.GetComponentInParent<PlayerController>() != null)
         {
-            Debug.Log("ggjfhdsklghfjsdkl");
             destroyedObjects.Add(obj);
             return;
         }
@@ -95,7 +87,6 @@ public class AttractionZone : MonoBehaviour
             float force = playerAttractionForce / Mathf.Max(distance * distance, 0.25f);
 
             rb.AddForce(direction.normalized * force);
-            Debug.Log("if 1");
         }
 
         else
@@ -111,8 +102,6 @@ public class AttractionZone : MonoBehaviour
             float speed = planetAttractionForce / Mathf.Max(distance * distance, 0.25f);
 
             tr.position += (Vector3)(direction.normalized * speed * Time.fixedDeltaTime);
-
-            Debug.Log("if 2");
         }
     }
 }

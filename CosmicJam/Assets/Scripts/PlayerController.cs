@@ -50,28 +50,21 @@ public class PlayerController : MonoBehaviour
 
     public IEnumerator Die()
     {
-        Debug.Log("Die: début");
-
         if (isDead)
             yield break;
 
         isDead = true;
 
-        Debug.Log("Die: avant MakeVisible");
         MakeVisible(false);
 
         enabled = false;
 
-        Debug.Log("Die: avant DisableMovement");
         DisableMovement();
 
-        Debug.Log("Die: avant LineRenderer");
         GetComponentInChildren<LineRenderer>().enabled = false;
 
-        Debug.Log("Die: avant GameManager");
         gameManager.HideGameUI();
 
-        Debug.Log("Die: avant OrbitalZone");
         int children = orbitalZone.transform.childCount;
 
         for (int i = 0; i < children; ++i)

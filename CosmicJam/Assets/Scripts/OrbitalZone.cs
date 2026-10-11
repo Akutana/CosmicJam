@@ -3,6 +3,8 @@ using UnityEngine;
 public class OrbitalZone : MonoBehaviour
 {
     [SerializeField] private float orbitSpeed = 90f;
+    [SerializeField] private float baseOrbitSpeed = 90f;
+    [SerializeField] private float maxOrbitSpeed = 240f;
     [SerializeField] private string planetTag = "";
 
     private int currentScore = 0;
@@ -10,6 +12,19 @@ public class OrbitalZone : MonoBehaviour
     private void FixedUpdate()
     {
         int children = transform.childCount;
+
+        if (children == 0)
+            return;
+
+        float orbitSpeed = Mathf.Min(
+            baseOrbitSpeed * Mathf.Sqrt(children),
+            maxOrbitSpeed
+        );
+        Debug.Log(orbitSpeed);
+
+        //float speedMultiplier = 1f + 0.3f * Mathf.Log(children);
+        //float currentOrbitSpeed = orbitSpeed * speedMultiplier;
+        //Debug.Log(currentOrbitSpeed);
 
         for (int i = 0; i < children; ++i)
         {
@@ -22,6 +37,15 @@ public class OrbitalZone : MonoBehaviour
                 Vector3.forward,
                 -orbitSpeed * Time.deltaTime
             );
+
+            //Transform obj = transform.GetChild(i);
+            //Quaternion quat = obj.rotation;
+
+            //obj.RotateAround(
+            //    transform.position,
+            //    Vector3.forward,
+            //    -currentOrbitSpeed * Time.fixedDeltaTime
+            //);
 
             obj.rotation = quat;
         }
