@@ -47,6 +47,7 @@ public class asteroidMover : MonoBehaviour
             {
                 planet.Explode(gameObject, GetComponent<Collider2D>());
                 asteroidExplode();
+                // destroy(gameObject);
             }
         }
 
