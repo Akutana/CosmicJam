@@ -6,7 +6,6 @@ public class Planet : MonoBehaviour
     [SerializeField] private GameObject explosion;
     [SerializeField] private Collider2D childCollider;
     [SerializeField] private int points;
-    [SerializeField] private OrbitalZone orbitalZone;
 
     public bool isExploding = false;
 
@@ -21,8 +20,6 @@ public class Planet : MonoBehaviour
             && collision.GetComponentInParent<PlayerController>() != null)
         {
             StartCoroutine(ExplodePlanet(collision.gameObject, collision));
-
-            orbitalZone.RemovePoints(points);
         }
     }
 

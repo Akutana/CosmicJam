@@ -7,8 +7,6 @@ public class OrbitalZone : MonoBehaviour
     [SerializeField] private float maxOrbitSpeed = 240f;
     [SerializeField] private string planetTag = "";
 
-    private int currentScore = 0;
-
     private void FixedUpdate()
     {
         int children = transform.childCount;
@@ -72,18 +70,21 @@ public class OrbitalZone : MonoBehaviour
         if (!obj.transform.IsChildOf(transform))
         {
             obj.transform.parent = transform;
-
-            currentScore += obj.GetComponent<Planet>().GetPointsValue();
         }
-    }
-
-    public void RemovePoints(int amount)
-    {
-        currentScore -= amount;
     }
 
     public int GetCurrentScore()
     {
-        return currentScore;
+        int score = 0;
+
+        for (int i = 0; i < transform.childCount; ++i)
+        {
+            Planet planet = transform.GetChild(i).GetComponent<Planet>();
+
+            if (planet != null && !planet.GetIsExploding())
+                score += planet.GetPointsValue();
+        }
+
+        return score;
     }
 }
