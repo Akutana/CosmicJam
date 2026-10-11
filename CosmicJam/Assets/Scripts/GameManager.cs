@@ -62,4 +62,10 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("MainMap");
     }
+
+    public void HideGameUI()
+    {
+        scoreText.gameObject.SetActive(false);
+        timerText.gameObject.SetActive(false);
+    }
 }

@@ -9,6 +9,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float fadeDuration = 2f;
     [SerializeField] private ScreenFader screenFader;
 
+    [Header("General")]
+    [SerializeField] private GameManager gameManager;
+    [SerializeField] private OrbitalZone orbitalZone;
+
     private Rigidbody2D rb;
     private Vector2 movement;
     private bool isDead = false;
@@ -43,6 +47,19 @@ public class PlayerController : MonoBehaviour
         enabled = false;
 
         DisableMovement();
+
+        GetComponentInChildren<LineRenderer>().enabled = false;
+
+        gameManager.HideGameUI();
+
+        int children = orbitalZone.transform.childCount;
+
+        for (int i = 0; i < children; ++i)
+        {
+            Transform obj = orbitalZone.transform.GetChild(i);
+
+            Destroy(obj.gameObject);
+        }
 
         screenFader.FadeToBlack(fadeDuration);
     }

@@ -36,7 +36,6 @@ public class AttractionZone : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            //isApplyingForce = false;
             objectsToAttract.Remove(collision.gameObject);
         }
     }

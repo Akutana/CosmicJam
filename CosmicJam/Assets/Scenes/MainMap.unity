@@ -1368,6 +1368,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8187773485420406468, guid: ce206a021a49da042bab9891ff2baad4, type: 3}
   m_PrefabInstance: {fileID: 6506101151091051193}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &894641781 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1488770613769346950, guid: ce206a021a49da042bab9891ff2baad4, type: 3}
+  m_PrefabInstance: {fileID: 6506101151091051193}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894641777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f98be9896a3c74e42a76b206aaebf12f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OrbitalZone
 --- !u!1 &1048263098
 GameObject:
   m_ObjectHideFlags: 0
@@ -2654,6 +2665,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 345716258042050186, guid: ce206a021a49da042bab9891ff2baad4, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 64456893}
+    - target: {fileID: 345716258042050186, guid: ce206a021a49da042bab9891ff2baad4, type: 3}
+      propertyPath: orbitalZone
+      value: 
+      objectReference: {fileID: 894641781}
     - target: {fileID: 345716258042050186, guid: ce206a021a49da042bab9891ff2baad4, type: 3}
       propertyPath: screenFader
       value: 
