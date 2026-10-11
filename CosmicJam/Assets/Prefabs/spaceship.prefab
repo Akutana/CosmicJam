@@ -128,6 +128,7 @@ GameObject:
   - component: {fileID: 4253134766961422209}
   - component: {fileID: 6295780034436374857}
   - component: {fileID: 4296856045915059470}
+  - component: {fileID: 5593442564141777244}
   m_Layer: 3
   m_Name: spaceship
   m_TagString: Planet
@@ -145,8 +146,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.71, y: 1.29, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.07, y: 0.07, z: 0.07}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 7131239098912084544}
   - {fileID: 2691491957067591318}
@@ -253,8 +254,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Planet
   explosion: {fileID: 631758069383359229}
   childCollider: {fileID: 7603831146582594675}
-  points: 5
-  orbitalZone: {fileID: 0}
+  points: 2
   isExploding: 0
 --- !u!70 &4296856045915059470
 CapsuleCollider2D:
@@ -293,6 +293,28 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 12.9, y: 29.9}
   m_Direction: 0
+--- !u!95 &5593442564141777244
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1486818295183438106}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5e6dc5a2fad384e45b31968a78573ec0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &9192756528606085070
 GameObject:
   m_ObjectHideFlags: 0

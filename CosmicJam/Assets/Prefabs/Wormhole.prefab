@@ -145,6 +145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Wormhole
   wormhole: {fileID: 0}
+  transition: {fileID: 0}
   cooldownDuration: 5
   cooldownColor: {r: 1, g: 1, b: 1, a: 0.12156863}
 --- !u!95 &7917454127891262224
