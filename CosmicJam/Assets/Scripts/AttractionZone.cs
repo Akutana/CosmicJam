@@ -23,9 +23,14 @@ public class AttractionZone : MonoBehaviour
         {
             Transform planet = collision.transform.parent;
 
-            if (planet.transform.parent == playerOrbitalZone.transform)
+            if (planet.transform.parent == playerOrbitalZone.transform
+                && !planet.GetComponent<Planet>().GetIsExploding())
             {
                 planet.transform.parent = null;
+
+                playerOrbitalZone.GetComponent<OrbitalZone>().RemovePoints(
+                    planet.GetComponent<Planet>().GetPointsValue()
+                );
 
                 objectsToAttract.Add(planet.gameObject);
             }
@@ -36,7 +41,6 @@ public class AttractionZone : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            //isApplyingForce = false;
             objectsToAttract.Remove(collision.gameObject);
         }
     }
@@ -48,7 +52,6 @@ public class AttractionZone : MonoBehaviour
 
         foreach (GameObject obj in objectsToAttract)
         {
-            Debug.Log("Attracting object");
             AttractObject(obj);
         }
 
@@ -56,6 +59,8 @@ public class AttractionZone : MonoBehaviour
         {
             objectsToAttract.Remove(obj);
         }
+
+        destroyedObjects.Clear();
     }
 
     private void AttractObject(GameObject obj)
@@ -66,6 +71,12 @@ public class AttractionZone : MonoBehaviour
             return;
         }
 
+        if (obj != player && obj.GetComponentInParent<PlayerController>() != null)
+        {
+            destroyedObjects.Add(obj);
+            return;
+        }
+        
         if (obj.GetComponent<Rigidbody2D>().bodyType == RigidbodyType2D.Dynamic)
         {
             Rigidbody2D rb = obj.GetComponent<Rigidbody2D>();

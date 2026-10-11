@@ -82,7 +82,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AttractionZone
   playerAttractionForce: 7000
-  planetAttractionForce: 1000
+  planetAttractionForce: 160
   player: {fileID: 0}
   playerOrbitalZone: {fileID: 0}
 --- !u!1 &2362539820479615654

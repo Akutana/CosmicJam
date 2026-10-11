@@ -14,12 +14,12 @@ public class GameManager : MonoBehaviour
 
     private float timeRemaining;
     private bool isRunning = true;
-    private float score = 0f;
+    private float currentScore = 0f;
 
     private void Start()
     {
         timeRemaining = timerDuration;
-        scoreText.text = "0";
+        scoreText.text = currentScore.ToString();
         timerText.text = timerDuration.ToString();
         gameEndText.gameObject.SetActive(false);
         restartGameButton.gameObject.SetActive(false);
@@ -31,8 +31,11 @@ public class GameManager : MonoBehaviour
             return;
 
         timeRemaining -= Time.deltaTime;
-        float rounded = UnityEngine.Mathf.Round(timeRemaining);
+        float rounded = Mathf.Round(timeRemaining);
         timerText.text = rounded.ToString();
+
+        currentScore = player.GetCurrentScore();
+        scoreText.text = currentScore.ToString();
 
         if (timeRemaining <= 0f)
         {
@@ -49,7 +52,7 @@ public class GameManager : MonoBehaviour
         scoreText.gameObject.SetActive(false);
         timerText.gameObject.SetActive(false);
         gameEndText.gameObject.SetActive(true);
-        gameEndText.text = "Your score: " + score;
+        gameEndText.text = "Your score: " + currentScore;
         restartGameButton.gameObject.SetActive(true);
     }
 
@@ -61,5 +64,11 @@ public class GameManager : MonoBehaviour
     public void RestartGame()
     {
         SceneManager.LoadScene("MainMap");
+    }
+
+    public void HideGameUI()
+    {
+        scoreText.gameObject.SetActive(false);
+        timerText.gameObject.SetActive(false);
     }
 }

@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.UI;
+using System.Collections;
 
 public class PlayerController : MonoBehaviour
 {
@@ -8,6 +10,21 @@ public class PlayerController : MonoBehaviour
     [Header("Death")]
     [SerializeField] private float fadeDuration = 2f;
     [SerializeField] private ScreenFader screenFader;
+    [SerializeField] private Image flashbangImage;
+    [SerializeField] private Image gameOverImage;
+    [SerializeField] private Button restartGameButton;
+    [SerializeField] private CanvasGroup gameOverCanvasGroup;
+    [SerializeField] private float gameOverDisplayDuration = 2f;
+    [SerializeField] private float gameOverFadeDuration = 1.5f;
+
+    [Header("General")]
+    [SerializeField] private GameManager gameManager;
+    [SerializeField] private OrbitalZone orbitalZone;
+
+
+    [Header("Sound")]
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip soundEffect;
 
     private Rigidbody2D rb;
     private Vector2 movement;
@@ -31,10 +48,10 @@ public class PlayerController : MonoBehaviour
         rb.linearVelocity = movement * moveSpeed;
     }
 
-    public void Die()
+    public IEnumerator Die()
     {
         if (isDead)
-            return;
+            yield break;
 
         isDead = true;
 
@@ -44,7 +61,47 @@ public class PlayerController : MonoBehaviour
 
         DisableMovement();
 
+        GetComponentInChildren<LineRenderer>().enabled = false;
+
+        gameManager.HideGameUI();
+
+        int children = orbitalZone.transform.childCount;
+
+        for (int i = 0; i < children; ++i)
+        {
+            Transform obj = orbitalZone.transform.GetChild(i);
+
+            Destroy(obj.gameObject);
+        }
+
         screenFader.FadeToBlack(fadeDuration);
+
+        yield return new WaitForSeconds(fadeDuration);
+
+        audioSource.PlayOneShot(soundEffect);
+        yield return new WaitForSeconds(0.15f);
+        gameOverImage.gameObject.SetActive(true);
+        flashbangImage.gameObject.SetActive(true);
+         
+        gameOverCanvasGroup.alpha = 1f;
+
+        yield return new WaitForSeconds(2.5f);
+
+        float elapsed = 0f;
+
+        while (elapsed < gameOverFadeDuration)
+        {
+            elapsed += Time.deltaTime;
+
+            gameOverCanvasGroup.alpha =
+                Mathf.Lerp(1f, 0f, elapsed / gameOverFadeDuration);
+
+            yield return null;
+        }
+
+        gameOverCanvasGroup.alpha = 0f;
+
+        restartGameButton.gameObject.SetActive(true);
     }
 
     public void MakeVisible(bool visible)
@@ -78,5 +135,10 @@ public class PlayerController : MonoBehaviour
         rb.linearVelocity = Vector2.zero;
         rb.angularVelocity = 0f;
         rb.simulated = false;
+    }
+
+    public int GetCurrentScore()
+    {
+        return orbitalZone.GetCurrentScore();
     }
 }
