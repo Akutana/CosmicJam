@@ -1059,11 +1059,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d294a414418f1f48a06bc34d86561f3, type: 3}
---- !u!58 &595390314 stripped
-CircleCollider2D:
-  m_CorrespondingSourceObject: {fileID: 1631159493297676304, guid: 607386bc54f65c449b9d8c175ff40b91, type: 3}
-  m_PrefabInstance: {fileID: 5895206060098661367}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &628201299
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1441,7 +1436,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -8483731395159641348, guid: bcdc948cac2282047a349ff13393f656, type: 3}
+  m_Sprite: {fileID: -5390270679446549742, guid: 31ebfad191f496b459225ff168820fc2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3325,30 +3320,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 382358473405616500, guid: 607386bc54f65c449b9d8c175ff40b91, type: 3}
-      propertyPath: deathZone
-      value: 
-      objectReference: {fileID: 595390314}
     - target: {fileID: 2006258617502010618, guid: 607386bc54f65c449b9d8c175ff40b91, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 637380765}
     - target: {fileID: 2006258617502010618, guid: 607386bc54f65c449b9d8c175ff40b91, type: 3}
-      propertyPath: attractionForce
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 2006258617502010618, guid: 607386bc54f65c449b9d8c175ff40b91, type: 3}
       propertyPath: playerOrbitalZone
       value: 
       objectReference: {fileID: 894641777}
-    - target: {fileID: 2006258617502010618, guid: 607386bc54f65c449b9d8c175ff40b91, type: 3}
-      propertyPath: planetAttractionForce
-      value: 175
-      objectReference: {fileID: 0}
-    - target: {fileID: 2006258617502010618, guid: 607386bc54f65c449b9d8c175ff40b91, type: 3}
-      propertyPath: playerAttractionForce
-      value: 20000
-      objectReference: {fileID: 0}
     - target: {fileID: 2362539820479615654, guid: 607386bc54f65c449b9d8c175ff40b91, type: 3}
       propertyPath: m_Name
       value: Black hole
@@ -3392,18 +3371,6 @@ PrefabInstance:
     - target: {fileID: 2401433953566046779, guid: 607386bc54f65c449b9d8c175ff40b91, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8220457480322363456, guid: 607386bc54f65c449b9d8c175ff40b91, type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 9175038450460310134, guid: 607386bc54f65c449b9d8c175ff40b91, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 55.52324
-      objectReference: {fileID: 0}
-    - target: {fileID: 9175038450460310134, guid: 607386bc54f65c449b9d8c175ff40b91, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.0061402
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3472,7 +3439,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 345716258042050186, guid: ce206a021a49da042bab9891ff2baad4, type: 3}
       propertyPath: moveSpeed
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 345716258042050186, guid: ce206a021a49da042bab9891ff2baad4, type: 3}
       propertyPath: audioSource
