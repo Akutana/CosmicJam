@@ -11,10 +11,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float fadeDuration = 2f;
     [SerializeField] private ScreenFader screenFader;
     [SerializeField] private Image flashbangImage;
-    [SerializeField] private Image gameOverImage;
+    [SerializeField] private Image trueGameOverImage;
     [SerializeField] private Button restartGameButton;
     [SerializeField] private CanvasGroup gameOverCanvasGroup;
-    [SerializeField] private float gameOverDisplayDuration = 2f;
     [SerializeField] private float gameOverFadeDuration = 1.5f;
 
     [Header("General")]
@@ -63,7 +62,7 @@ public class PlayerController : MonoBehaviour
 
         GetComponentInChildren<LineRenderer>().enabled = false;
 
-        gameManager.HideGameUI();
+        //gameManager.HideGameUI();
 
         int children = orbitalZone.transform.childCount;
 
@@ -80,10 +79,11 @@ public class PlayerController : MonoBehaviour
 
         audioSource.PlayOneShot(soundEffect);
         yield return new WaitForSeconds(0.15f);
-        gameOverImage.gameObject.SetActive(true);
         flashbangImage.gameObject.SetActive(true);
          
         gameOverCanvasGroup.alpha = 1f;
+
+        trueGameOverImage.gameObject.SetActive(true);
 
         yield return new WaitForSeconds(2.5f);
 
@@ -100,6 +100,8 @@ public class PlayerController : MonoBehaviour
         }
 
         gameOverCanvasGroup.alpha = 0f;
+
+        yield return new WaitForSeconds(2f);
 
         restartGameButton.gameObject.SetActive(true);
     }

@@ -20,11 +20,9 @@ public class OrbitalZone : MonoBehaviour
             baseOrbitSpeed * Mathf.Sqrt(children),
             maxOrbitSpeed
         );
-        Debug.Log(orbitSpeed);
 
         //float speedMultiplier = 1f + 0.3f * Mathf.Log(children);
         //float currentOrbitSpeed = orbitSpeed * speedMultiplier;
-        //Debug.Log(currentOrbitSpeed);
 
         for (int i = 0; i < children; ++i)
         {

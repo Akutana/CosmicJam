@@ -4,9 +4,19 @@ public class BlackHole : MonoBehaviour
 {
     [SerializeField] private Collider2D deathZone;
 
+    private bool canKillPlayer = true;
+
+    private void Awake()
+    {
+        GameManager.OnTimerFinishedEvent += TimerFinished;
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (!deathZone.IsTouching(collision))
+            return;
+
+        if (!canKillPlayer)
             return;
 
         if (collision.CompareTag("Player"))
@@ -19,5 +29,10 @@ public class BlackHole : MonoBehaviour
         {
             Destroy(collision.transform.parent.gameObject);
         }
+    }
+
+    private void TimerFinished()
+    {
+        canKillPlayer = false;
     }
 }
