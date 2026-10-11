@@ -1,7 +1,5 @@
 using TMPro;
-using UnityEditor.Rendering;
 using UnityEngine;
-using UnityEngine.InputSystem.XR.Haptics;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 

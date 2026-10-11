@@ -11,7 +11,7 @@ public class BlackHole : MonoBehaviour
 
         if (collision.CompareTag("Player"))
         {
-            collision.GetComponent<PlayerController>().Die();
+            StartCoroutine(collision.GetComponent<PlayerController>().Die());
         }
         
         else if (collision.transform.parent != null

@@ -78,7 +78,7 @@ public class AttractionZone : MonoBehaviour
             return;
         }
 
-        if (obj.GetComponentInParent<PlayerController>() != null)
+        if (obj != player && obj.GetComponentInParent<PlayerController>() != null)
         {
             Debug.Log("ggjfhdsklghfjsdkl");
             destroyedObjects.Add(obj);
