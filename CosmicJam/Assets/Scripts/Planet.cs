@@ -17,7 +17,8 @@ public class Planet : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Planet")
-            && collision.GetComponentInParent<PlayerController>() != null)
+            && collision.GetComponentInParent<PlayerController>() != null
+            && GetComponentInParent<PlayerController>() == null)
         {
             StartCoroutine(ExplodePlanet(collision.gameObject, collision));
         }
