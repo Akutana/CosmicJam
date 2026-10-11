@@ -46,8 +46,21 @@ public class OrbitalZone : MonoBehaviour
             //    Vector3.forward,
             //    -currentOrbitSpeed * Time.fixedDeltaTime
             //);
+            if (obj.gameObject.layer == LayerMask.NameToLayer("Spaceship"))
+            {
+                Vector3 radialDirection = obj.position - transform.position;
+                Vector3 moveDirection =
+                    Vector3.Cross(Vector3.forward, radialDirection).normalized
+                    * Mathf.Sign(-orbitSpeed);
 
-            obj.rotation = quat;
+                float angle = Mathf.Atan2(moveDirection.y, moveDirection.x) * Mathf.Rad2Deg;
+                obj.rotation = Quaternion.Euler(0f, 0f, angle - 90f);
+            }
+            else
+            {
+                obj.rotation = quat;
+            }
+            
         }
     }
 
