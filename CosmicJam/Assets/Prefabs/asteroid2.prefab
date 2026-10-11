@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 9155957025328016830}
   - component: {fileID: 4253134766961422209}
   - component: {fileID: 8193364790348822153}
+  - component: {fileID: 6105116091634164504}
   m_Layer: 0
-  m_Name: asteroid
-  m_TagString: Untagged
+  m_Name: asteroid2
+  m_TagString: asteroid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85,7 +86,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -5766033097715662417, guid: 23cdfb761cc52cf48a3d9017808a78a8, type: 3}
+  m_Sprite: {fileID: -5855003014915806325, guid: 23cdfb761cc52cf48a3d9017808a78a8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -159,6 +160,19 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!114 &6105116091634164504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1486818295183438106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27cfda880bd1eb14681acf5a904ad66c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::asteroidMover
+  moveSpeed: 5
 --- !u!1 &3439651544492486532
 GameObject:
   m_ObjectHideFlags: 0
@@ -185,13 +199,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3439651544492486532}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.8, y: 2.8, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: -0.19466238, w: 0.98087037}
+  m_LocalPosition: {x: -1.6, y: 6.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 9131035187706983613}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -22.45}
 --- !u!212 &7286676302575148885
 SpriteRenderer:
   serializedVersion: 3
@@ -242,7 +256,7 @@ SpriteRenderer:
   m_SortingOrder: 3
   m_MaskInteraction: 0
   m_Sprite: {fileID: 6580503983020999235, guid: 81332790736e0fb4faf361349e7e9882, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.6862745}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -262,7 +276,7 @@ Animator:
   m_GameObject: {fileID: 3439651544492486532}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 8e8f763b666a09d4db740e71838a3624, type: 2}
+  m_Controller: {fileID: 9100000, guid: 0d88b82ef75ef1c4e8740ac1ec093ab0, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
