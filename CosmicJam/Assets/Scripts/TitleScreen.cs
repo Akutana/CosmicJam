@@ -4,12 +4,12 @@ using UnityEngine.SceneManagement;
 
 public class TitleScreen : MonoBehaviour
 {
-    [SerializeField] private Image image;
+    //[SerializeField] private GameObject titleScreen;
 
-    void Start()
-    {
-        image.gameObject.SetActive(true);
-    }
+    //void Start()
+    //{
+    //    titleScreen.gameObject.SetActive(true);
+    //}
 
     public void StartGame()
     {
