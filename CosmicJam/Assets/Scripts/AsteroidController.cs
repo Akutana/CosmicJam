@@ -1,4 +1,3 @@
-// using System.Security.Authentication.ExtendedProtection;
 using UnityEngine;
 
 public class AsteroidController : MonoBehaviour
@@ -9,9 +8,12 @@ public class AsteroidController : MonoBehaviour
     [SerializeField] private GameObject player;
     [SerializeField] private Camera cam;
     [SerializeField] private float screenBuffer = 0.05f;
-    [SerializeField] private float spawnRate;
+    [SerializeField] private float minSpawnRate = 2;
+    [SerializeField] private float maxSpawnRate = 10;
+
     [SerializeField] private float asteroidSize;
     private float timer = 0;
+    private float spawnRate = 2;
 
     void Update()
     {
@@ -23,6 +25,7 @@ public class AsteroidController : MonoBehaviour
         {
             spawnAsteroid();
             timer = 0;
+            spawnRate = Random.Range(minSpawnRate, maxSpawnRate);
         }
     }
 
@@ -45,10 +48,7 @@ public class AsteroidController : MonoBehaviour
         
         GameObject[] asteroids = { asteroid0, asteroid1, asteroid2 };
         GameObject asteroid = asteroids[Random.Range(0, asteroids.Length)];
-
-
-        
-        //change direction at somepoint
+        // GameObject asteroid = asteroid0;
         GameObject spawnedAsteroid = Instantiate(asteroid, spawnPosition, Quaternion.identity);
         spawnedAsteroid.GetComponent<asteroidMover>().SetTarget(player.transform);
     }

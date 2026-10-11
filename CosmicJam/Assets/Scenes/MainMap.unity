@@ -582,7 +582,8 @@ MonoBehaviour:
   player: {fileID: 637380765}
   cam: {fileID: 1322004911}
   screenBuffer: 0.05
-  spawnRate: 2
+  minSpawnRate: 2
+  maxSpawnRate: 10
   asteroidSize: 2
 --- !u!1001 &503289213
 PrefabInstance:
