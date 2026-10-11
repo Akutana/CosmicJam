@@ -145,6 +145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Wormhole
   wormhole: {fileID: 0}
+  transition: {fileID: 0}
 --- !u!95 &7917454127891262224
 Animator:
   serializedVersion: 7
